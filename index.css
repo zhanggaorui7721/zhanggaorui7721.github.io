@@ -10,3 +10,6 @@ body{
     height:30px;
 }
 
+h1{
+    user-select:none;
+}
