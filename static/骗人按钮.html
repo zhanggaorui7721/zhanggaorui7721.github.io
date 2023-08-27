@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <systle>
+      body{
+
+        background-color:rgb(127,96,0);
+
+
+}
+    </systle>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <style>
+        #board {
+          background-color: white;            
+          font-family: sans-serif;            
+          color: white;      
+          font-size: 25px;           
+          padding: 10px;            
+          display: inline-block;            
+          /*宽度太长,(想行内元素, 块级元素)                
+          1.给定宽度                
+          2. 改为行内块 display : inline-block            
+          */
+        }
+        
+        #board.active {
+          color: black;
+        }
+    </style>
+    <script>
+        $(function () {
+          function toggle() {
+            let $board = $('#board')
+            if ($board.hasClass('active')) {
+              $board.removeClass('active')
+            } else {
+              $board.addClass('active')
+            }
+          }
+        
+          setInterval(toggle, 200)
+        })
+    </script>
+</head>
+
+<body style="">
+    <a href="https://zhanggaorui7721.github.io/pian/zp.html">
+        <div id="board" class="">一些好康的</div>
+    </a>
+
+
+</body>
+
+</html>
